@@ -1,30 +1,34 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.5.002.0
+VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{2DDFE0DE-D9AF-4354-82D0-C546010D8ADD}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{BAFF2311-F142-421E-98C2-B9B562A1B66A}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PublishWorker", "src\PublishWorker\PublishWorker.csproj", "{9C66374F-AA4B-4C15-BF1A-BC54E0BB8210}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AzureServiceBusReceiver", "src\AzureServiceBusReceiver\AzureServiceBusReceiver.csproj", "{665ECFFC-E089-475E-B7E3-3E4DA1C0BE0F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AzureServiceBusSender", "src\AzureServiceBusSender\AzureServiceBusSender.csproj", "{86319410-5D1B-40C8-8FAD-69D232CD95FC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
-	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{9C66374F-AA4B-4C15-BF1A-BC54E0BB8210}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{9C66374F-AA4B-4C15-BF1A-BC54E0BB8210}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{9C66374F-AA4B-4C15-BF1A-BC54E0BB8210}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{9C66374F-AA4B-4C15-BF1A-BC54E0BB8210}.Release|Any CPU.Build.0 = Release|Any CPU
-	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
-	GlobalSection(NestedProjects) = preSolution
-		{9C66374F-AA4B-4C15-BF1A-BC54E0BB8210} = {2DDFE0DE-D9AF-4354-82D0-C546010D8ADD}
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{665ECFFC-E089-475E-B7E3-3E4DA1C0BE0F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{665ECFFC-E089-475E-B7E3-3E4DA1C0BE0F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{665ECFFC-E089-475E-B7E3-3E4DA1C0BE0F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{665ECFFC-E089-475E-B7E3-3E4DA1C0BE0F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{86319410-5D1B-40C8-8FAD-69D232CD95FC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{86319410-5D1B-40C8-8FAD-69D232CD95FC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{86319410-5D1B-40C8-8FAD-69D232CD95FC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{86319410-5D1B-40C8-8FAD-69D232CD95FC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
-	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {FFAA105E-25E6-4856-A9CF-E255B4BA5B41}
+	GlobalSection(NestedProjects) = preSolution
+		{665ECFFC-E089-475E-B7E3-3E4DA1C0BE0F} = {BAFF2311-F142-421E-98C2-B9B562A1B66A}
+		{86319410-5D1B-40C8-8FAD-69D232CD95FC} = {BAFF2311-F142-421E-98C2-B9B562A1B66A}
 	EndGlobalSection
 EndGlobal
