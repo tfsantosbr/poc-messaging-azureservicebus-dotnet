@@ -22,3 +22,13 @@ powershell.exe -Command "Import-Certificate -FilePath cacert.cer -CertStoreLocat
 ```bash
 Endpoint=sb://localhost/;SharedAccessKeyName=all;SharedAccessKey=CLwo3FQ3S39Z4pFOQDefaiUd1dSsli4XOAj3Y9Uh1E=;EnableAmqpLinkRedirect=false
 ```
+
+## Rodando as aplicações
+
+```bash
+# Sender
+dotnet run --project src/AzureServiceBusSender
+
+# Receiver
+dotnet run --project src/AzureServiceBusReceiver
+```
