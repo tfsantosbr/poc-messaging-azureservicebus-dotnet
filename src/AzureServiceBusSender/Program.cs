@@ -1,7 +1,7 @@
 ﻿using Azure.Messaging.ServiceBus;
 
-string connectionString = "Endpoint=sb://localhost/;SharedAccessKeyName=all;SharedAccessKey=CLwo3FQ3S39Z4pFOQDefaiUd1dSsli4XOAj3Y9Uh1E=;EnableAmqpLinkRedirect=false";
-string topicName = "sb-test-topic"; // Substitua pelo nome da fila
+string connectionString = "Endpoint=sb://localhost;SharedAccessKeyName=RootManageSharedAccessKey;SharedAccessKey=SAS_KEY_VALUE;UseDevelopmentEmulator=true;";
+string topicName = "sb-test-topic";
 
 // Crie um client para o Service Bus
 ServiceBusClient client = new(connectionString);
